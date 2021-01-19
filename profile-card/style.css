@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+  
+
+.bg-img {
+    max-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #1d9299;
+} 
+
+.bg-img .images {
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.bg-img .images img {
+    max-width: 70%;
+}
+
+.bg-img .images img:first-of-type {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+/** Card */
+
+.card {
+    max-width: 350px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e5e5e5;
+    border-radius: 17px;
+}
+
+.card > .top > img{
+    border-radius: 17px 17px 0px 0px;
+}
+
+.card > .center {
+    display: flex;
+    height: 13vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card > .center > .person-img {
+    margin-top: -50px;
+    border-radius: 50%;
+}
+
+.card > .center > .person-img > img {
+    border-radius: 50%;
+    border: 3px solid #FFF;
+}
+
+.card > .center > .info > h2{
+    font-size: 18px;
+    color: #000000d4;
+}
+
+.card > .center > .info > h2 > span {
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 5px;
+    color: #00000087;
+}
+
+.card > .center > .info > span {
+    color: #00000087;
+    display: block;
+    margin-top: 5px;
+}
+
+.card > hr {
+    height: 1px;
+    background-color: #00000059;
+    opacity: .2;
+    margin: 1.5rem 0;
+}
+
+.card > .bottom {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.card > .bottom > div {
+    text-align: center;
+}
+
+.card > .bottom > div > h3 {
+    color: #000000d6;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.card > .bottom > div > span {
+    color: #00000087;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: light;
+}
